@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var nomePuro = "gABRIEL gUIDETti gONZALEz jUAQYUN";
+            var x = nomePuro.split(" ").length;
+            var nomeFinal = "";
+            for(var i = 0; i<x; i++){
+                var nomeMin = nomePuro.split(" ")[i];
+                var primeiroNomeMin = nomeMin.toLowerCase();
+                var primeiraLetra = nomeMin.charAt(0).toUpperCase();
+                primeiroNomeMin = primeiroNomeMin.substr(1,primeiroNomeMin.length);
+                nomeFinal = nomeFinal+" "+primeiraLetra+primeiroNomeMin;
+            }
+            console.log(nomeFinal);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
